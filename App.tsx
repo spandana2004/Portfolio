@@ -420,22 +420,53 @@ const App: React.FC = () => {
       </Section>
 
       {/* Footer */}
-      <footer className="py-24 px-6 border-t border-slate-100 dark:border-white/5 text-center relative z-10 transition-colors bg-white dark:bg-slate-950">
+      <footer className="py-12 sm:py-24 px-4 sm:px-6 border-t border-slate-100 dark:border-white/5 text-center relative z-10 transition-colors bg-white dark:bg-slate-950">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-black mb-12 dark:text-white tracking-tighter">Ready for new challenges.</h2>
-          <div className="flex justify-center gap-6 mb-20">
-            <a href="mailto:ap.spandana@gmail.com" className="px-12 py-5 bg-indigo-600 text-white rounded-3xl font-black shadow-2xl shadow-indigo-500/30 hover:scale-105 transition-all text-sm tracking-widest">Email me at : ap.spandana@gmail.com</a>
-            <a href="/Spandana_AP.pdf" className="px-12 py-5 glass dark:bg-slate-900 text-slate-900 dark:text-white rounded-3xl font-black hover:bg-slate-100 transition-all flex items-center gap-2 text-sm uppercase tracking-widest border border-black/5 dark:border-white/5 shadow-xl">
+          {/* Heading */}
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-12 dark:text-white tracking-tighter">
+            Ready for new challenges.
+          </h2>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">
+            <a
+              href="mailto:ap.spandana@gmail.com"
+              className="w-full sm:w-auto px-6 sm:px-12 py-5 bg-indigo-600 text-white rounded-3xl font-black shadow-2xl shadow-indigo-500/30 hover:scale-105 transition-all text-sm tracking-widest text-center"
+            >
+              Email me at: ap.spandana@gmail.com
+            </a>
+            <a
+              href="/Spandana_AP.pdf"
+              className="w-full sm:w-auto px-6 sm:px-12 py-5 glass dark:bg-slate-900 text-slate-900 dark:text-white rounded-3xl font-black hover:bg-slate-100 transition-all flex justify-center items-center gap-2 text-sm uppercase tracking-widest border border-black/5 dark:border-white/5 shadow-xl"
+            >
               <FileText className="w-5 h-5" /> Resume
             </a>
           </div>
-          <div className="flex justify-center gap-10 mb-12 text-slate-400 font-black uppercase text-[10px] tracking-[0.4em]">
-            <a href="https://linkedin.com/in/spandana-a-p-23451924b/" target="_blank" className="hover:text-indigo-600 dark:hover:text-white transition-colors">LinkedIn</a>
-            <a href="https://github.com/spandana2004" target="_blank" className="hover:text-indigo-600 dark:hover:text-white transition-colors">GitHub</a>
+
+          {/* Social Links */}
+          <div className="flex flex-wrap justify-center gap-10 mb-12 text-slate-400 font-black uppercase text-[10px] tracking-[0.4em]">
+            <a
+              href="https://linkedin.com/in/spandana-a-p-23451924b/"
+              target="_blank"
+              className="hover:text-indigo-600 dark:hover:text-white transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/spandana2004"
+              target="_blank"
+              className="hover:text-indigo-600 dark:hover:text-white transition-colors"
+            >
+              GitHub
+            </a>
           </div>
+
+          {/* Divider */}
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-8 rounded-full"></div>
+
+          {/* Footer Text */}
           <p className="text-slate-400 dark:text-slate-600 text-[10px] font-black uppercase tracking-[0.5em]">
-            &copy; 2025 SPANDANA A P • AI/ML  • DATA SCIENCE • SOFTWARE ENGINEER
+            &copy; 2025 SPANDANA A P • AI/ML • DATA SCIENCE • SOFTWARE ENGINEER
           </p>
         </div>
       </footer>
