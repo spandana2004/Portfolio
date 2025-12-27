@@ -368,29 +368,38 @@ const App: React.FC = () => {
 
       {/* Research */}
       <Section id="research" title="Research & Publications" icon={<BookOpen />}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {PUBLICATIONS.map((pub, idx) => (
-            <div key={idx} className="group p-10 bg-white dark:bg-slate-900 rounded-[3rem] border border-slate-100 dark:border-white/5 shadow-lg shadow-black/5 hover:border-emerald-500/30 transition-all animate-on-scroll">
-              <div className="flex items-start gap-6">
-                <div className="w-12 h-12 bg-emerald-50 dark:bg-emerald-500/10 rounded-2xl flex items-center justify-center shrink-0 text-emerald-600">
-                  <FileText className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-black text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 transition-colors mb-2 leading-tight">
-                    {pub.title}
-                  </h3>
-                  <p className="text-sm text-slate-500 font-bold mb-4">{pub.description} ({pub.year})</p>
-                  <div className="flex flex-wrap gap-2">
-                    <div className="inline-flex items-center gap-2 text-[10px] font-black text-emerald-600 bg-emerald-500/5 px-4 py-2 rounded-xl border border-emerald-500/10 uppercase tracking-widest">
-                      DOI: {pub.doi}
-                    </div>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-4">
+        {PUBLICATIONS.map((pub, idx) => (
+          <div
+            key={idx}
+            className="group p-6 sm:p-8 md:p-10 bg-white dark:bg-slate-900 rounded-[2rem] sm:rounded-[2.5rem] border border-slate-100 dark:border-white/5 shadow-lg shadow-black/5 hover:border-emerald-500/30 transition-all animate-on-scroll w-full"
+          >
+            <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              {/* Icon */}
+              <div className="w-12 h-12 bg-emerald-50 dark:bg-emerald-500/10 rounded-2xl flex items-center justify-center shrink-0 text-emerald-600">
+                <FileText className="w-6 h-6" />
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 transition-colors mb-2 leading-tight">
+                  {pub.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-500 font-bold mb-3 sm:mb-4">
+                  {pub.description} ({pub.year})
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <div className="inline-flex items-center gap-2 text-[8px] sm:text-[10px] font-black text-emerald-600 bg-emerald-500/5 px-2 sm:px-4 py-1 sm:py-2 rounded-xl border border-emerald-500/10 uppercase tracking-widest">
+                    DOI: {pub.doi}
                   </div>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-      </Section>
+          </div>
+        ))}
+      </div>
+    </Section>
+
 
       {/* Education */}
       <Section id="education" title="Education History" icon={<GraduationCap />}>
