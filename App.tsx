@@ -118,9 +118,11 @@ const App: React.FC = () => {
             <Sparkles className="w-3 h-3" />
             Computer Science Engineering Student
           </div>
-          <h1 className="text-6xl md:text-8xl font-black leading-[1.1] tracking-tighter text-slate-900 dark:text-white">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-black leading-[1.1] tracking-tighter text-slate-900 dark:text-white">
             Hello, I'm <br />
-            <span className="gradient-text italic font-serif inline-block pr-12 overflow-visible">Spandana A P</span>
+            <span className="gradient-text italic font-serif block sm:inline">
+              Spandana A P
+            </span>
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl font-medium leading-relaxed text-justify">
             A Computer Science undergraduate fueled by the challenge of architecting intelligent systems and end-to-end software solutions. With a proven track record across government research labs, startups, and innovative tech spaces, I specialize in bridging the gap between theoretical machine learning and scalable real-world impact. I am passionate about transforming complex data into reliable, user-centric products. I value clean design, robust engineering, and continuous learning, and I thrive in environments that push the boundaries of innovation to create meaningful, lasting impact.
